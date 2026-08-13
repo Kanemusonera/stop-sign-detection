@@ -64,9 +64,9 @@ underlying problem was solved.
 
 ## Pipeline
 
-```
-![System integration diagram](docs/System intergration.png)
-```
+
+![System integration diagram](docs/system-diagram.png)
+
 
 The Arduino does not simply cut power. It ramps PWM down over 1 second, holds a full stop for
 5 seconds, then enters a 5-second cooldown and flushes its confidence buffer before it will
