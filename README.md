@@ -31,6 +31,7 @@ long time it was right for the wrong reason.
 
 **Hardware:** Raspberry Pi 5 · Camera Module 3 (IMX708) · Arduino Uno · L298N dual H-bridge ·
 2WD chassis · custom 3D-printed camera mount. Build cost £208.
+![Assembled system: Raspberry Pi 5 with camera mount, and chassis with Arduino Uno and L298N driver](docs/system-assembled.png)
 
 **Software:** Python · TensorFlow/Keras · OpenCV · Picamera2 · Arduino C++ · SolidWorks
 
@@ -64,20 +65,7 @@ underlying problem was solved.
 ## Pipeline
 
 ```
-Camera Module 3
-      │  Picamera2, 640×480
-      ▼
-  Frame capture
-      │  resize 64×64, rescale 1/255
-      ▼
-  CNN, sigmoid output   ──►  "stop_sign: 92.4%"
-      │
-      │  pyserial, 9600 baud, /dev/ttyUSB0
-      ▼
-  Arduino Uno
-      │  5-frame rolling mean, ≥86% → brake
-      ▼
-  L298N ──► motors
+![System integration diagram](docs/System intergration.png)
 ```
 
 The Arduino does not simply cut power. It ramps PWM down over 1 second, holds a full stop for
