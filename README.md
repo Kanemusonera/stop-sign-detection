@@ -1,7 +1,5 @@
 
 
-https://github.com/user-attachments/assets/764b5aef-a273-42f5-b918-a8af4e4050a7
-
 # Real-Time Stop Sign Detection and Vehicle Control
 
 A Raspberry Pi 5 perception system that classifies stop signs from a live camera feed and
@@ -38,6 +36,8 @@ long time it was right for the wrong reason.
 ---
 
 ## The finding worth reading
+
+https://github.com/user-attachments/assets/764b5aef-a273-42f5-b918-a8af4e4050a7 
 
 The first model reached 93–95% validation accuracy and then classified a red wall as a stop
 sign at 68.5% confidence. A red "GO" sign scored 57.0% — a confident false positive on a sign
