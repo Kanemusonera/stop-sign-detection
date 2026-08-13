@@ -11,4 +11,14 @@ Two designs were produced:
 
 Print settings: PETG, 0.1mm layer height, 20–25% infill, supports and brim.
 
+## Design
+
+![SolidWorks model of the mount](mount-cad.png)
+
+## Printed
+
+![Printed mount in PETG](mount-printed.png)
+
+![Front view showing the ribbon cable channel](mount-printed-front.png)
+
 See `../docs/hardware.md` for why this mattered more than it might appear.
