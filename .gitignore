@@ -1,0 +1,50 @@
+# ── Datasets — NEVER commit these ────────────────────────────────────────────
+# Committing then deleting does not help: the blobs stay in git history and the
+# repo is permanently bloated. Keep them out from the first commit.
+TrainImages/
+StopSign_Dataset/
+NewTrafficSign_Dataset/
+ObjectDetection/
+dataset/
+data/
+
+# ── Model artefacts ──────────────────────────────────────────────────────────
+# The trained .h5 is ~6MB and is fine to commit if you want the repo to be
+# runnable out of the box — delete the two lines below if so.
+*.h5
+*.keras
+*.pkl
+*.pt
+*.weights
+
+# ── Runtime output ───────────────────────────────────────────────────────────
+frame.jpg
+test_frame.png
+test_room.jpg
+stop_sign_frame.png
+debug_shape_detection.png
+training_history.pkl
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+yoloenv/
+venv/
+env/
+.venv/
+
+# ── Editors / OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Images: block by default, allow documentation ────────────────────────────
+*.jpg
+*.jpeg
+*.png
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.gif
