@@ -66,7 +66,7 @@ behaving oddly.
 
 Two mounts were designed in SolidWorks: an L-bracket holding the Pi and camera
 at a fixed orientation, and a taller tripod form that allows the ribbon cable to
-be removed without disassembling the mount. The tripod design was printed in
+be removed with the open slit. The tripod design was printed in
 PETG at 0.1mm layer height, 20–25% infill, with supports and a brim.
 
 It removed the shake and made capture angle repeatable. That did more for data
