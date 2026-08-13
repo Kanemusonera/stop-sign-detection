@@ -58,6 +58,9 @@ meaning what it says.
 used throughout. A mapping of 2/3/4/5 was tried and left one wheel dead.
 
 ## Camera mount
+![Camera Module 3 held at fixed height and angle by the printed mount](camera-mount-assembled.png)
+
+![SolidWorks model of the mount](../mount/mount-cad.png)
 
 The Pi and camera were initially hand-held during testing. Camera angle and
 height shifted between captures and every frame carried shake, which made the
@@ -73,3 +76,12 @@ It removed the shake and made capture angle repeatable. That did more for data
 quality than any software change made over the same period — worth stating
 plainly, because it is easy to assume the interesting work in an ML project is
 all in the model.
+
+## Superseded: Pimoroni Explorer pHAT
+
+Before the Arduino/L298N architecture, motor control was attempted directly from
+the Pi via a Pimoroni Explorer pHAT. It was abandoned in favour of offloading
+motor control to a separate microcontroller, which keeps the timing-critical
+braking logic off the same processor doing inference.
+
+![Raspberry Pi with Explorer pHAT alongside the chassis](explorer-phat-superseded.png)
