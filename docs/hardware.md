@@ -62,20 +62,9 @@ used throughout. A mapping of 2/3/4/5 was tried and left one wheel dead.
 
 ![SolidWorks model of the mount](../mount/mount-cad.png)
 
-The Pi and camera were initially hand-held during testing. Camera angle and
-height shifted between captures and every frame carried shake, which made the
-training data inconsistent in a way that was invisible until the model started
-behaving oddly.
+The Pi and camera were initially hand-held during testing, so angle and height shifted between captures and every frame carried shake. The mount is an L-shaped bracket that sits on top of the Raspberry Pi case, with the ribbon cable fed through a channel in the vertical arm and the camera fixed at the top. Printed in PETG at 0.1mm layers, 20–25% infill.
 
-Two mounts were designed in SolidWorks: an L-bracket holding the Pi and camera
-at a fixed orientation, and a taller tripod form that allows the ribbon cable to
-be removed with the open slit. The tripod design was printed in
-PETG at 0.1mm layer height, 20–25% infill, with supports and a brim.
-
-It removed the shake and made capture angle repeatable. That did more for data
-quality than any software change made over the same period — worth stating
-plainly, because it is easy to assume the interesting work in an ML project is
-all in the model.
+It removed the shake and made capture angle repeatable — which did more for data quality than any software change over the same period.
 
 ## Superseded: Pimoroni Explorer pHAT
 
